@@ -1,0 +1,44 @@
+body {
+  background-color: steelblue;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: Permanent Marker, cursive;
+  font-size: 24px;
+}
+
+p, textarea {
+  font-family: Nothing You Could Do, cursive;
+}
+
+hr {
+  border: 0;
+}
+
+label, textarea {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#date {
+  padding-top: 0;
+}
+
+.name {
+  width: 60%;
+  placeholder: "List Name";
+}
+
+.buttons {
+  width: 60%;
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 0;
+}
