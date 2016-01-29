@@ -1,7 +1,7 @@
 body {
   background-color: lightgreen;
-  text-decoration: underline;
   color: royalblue;
+  text-decoration: underline;
 }
 
 h1 {
@@ -12,7 +12,6 @@ h1 {
 p, input, input:placeholder-shown {
   font-family: Nothing You Could Do, cursive;
   font-size: 16px;
-  text-decoration: strikethrough;
 }
 
 input {
@@ -21,14 +20,12 @@ input {
   margin-bottom: 5px;
   padding-left: 2em;
   color: royalblue;
-  font-size: 16px;
 }
 
 button {
   width: 25px;
   color: royalblue;
   font-weight: bolder;
-  vertical-align: middle;
 }
 
 input:placeholder-shown {
@@ -37,7 +34,6 @@ input:placeholder-shown {
 
 .add {
   width: 50px;
-  min-width: 20px;
 }
 
 .masthead {
@@ -45,14 +41,13 @@ input:placeholder-shown {
 }
 
 .title {
-  padding-bottom: 0;
-  margin-bottom: 0;
+
 }
 
 #date {
-  padding-top: 0;
+
 }
 
 .new-item {
-  margin-bottom: 1.67em;
+  margin-bottom: 1.5em;
 }
