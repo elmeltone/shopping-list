@@ -33,6 +33,10 @@ button {
   text-shadow: none;
 }
 
+button:hover, span:hover {
+  cursor: pointer;
+}
+
 input {
   border-radius: 7px;
 }
@@ -41,10 +45,6 @@ ul {
   list-style-type: none;
   display: inline-block;
 
-}
-
-.add {
-  width: 50px;
 }
 
 .masthead {
@@ -59,8 +59,11 @@ ul {
   margin-bottom: 1em;
 }
 
-.new-item {
+#new-item {
   margin-bottom: 1.5em;
+}
+
+#add {
 }
 
 /* Responsive */

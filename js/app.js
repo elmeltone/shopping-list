@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
 /* Add default items */
-  $('#list').append('<li>&#43;  x    milk</li>');
-
+  $('#list').append('<li><span class="delete">&#10007</span>  <span class="check">&#10003</span>  milk</li>');
+  $('#list').append('<li><span class="delete">&#10007</span>  <span class="check">&#10003</span>  eggs</li>');
+  $('#list').append('<li><span class="delete">&#10007</span>  <span class="check">&#10003</span>  bread</li>');
 
 /* Add new item */
   $('#add').click(function(e) {
