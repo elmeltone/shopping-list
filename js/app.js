@@ -31,7 +31,7 @@ $(document).ready(function() {
 /* Delete item */
 $('.delete').mousedown(function(event) {
   //console.log("deleted item");
-  $('.list-items').remove();
+  $(this).parent('li').remove();
 });
 
 });
