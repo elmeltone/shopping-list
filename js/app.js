@@ -5,9 +5,20 @@ $(document).ready(function() {
 
 
 /* Add new item */
-  $('.add').click(funtion){
-    var
-  };
+  $('#add').click(function){
+    var input-area = document.getElementById('new-item')
+    var input-value = input-area.value;
+    event.preventDefault();
+
+    if(!$('#new-item').val()) {
+      /*.alert('Please type a new item in the space provided.');*/
+      console.log();
+    } else {
+        $('<li class="list-items"></li>').appendTo('#list')/*.html('<div class="item-case"></div><span>'input-value'</span>')*/;
+
+    document.getElementById('new-item').value = '';
+    };
+  });
 
 /* Use "enter" key for new item */
   $(.'new-item').keydown(funtion(event){
@@ -17,4 +28,4 @@ $(document).ready(function() {
     };
   });
 
-}
+});
