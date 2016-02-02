@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 /* Add default items */
-  // $('.list' ul).append('<li>milk</li>');
+  $('#list').append('<li>&#43;  x    milk</li>');
 
 
 /* Add new item */
@@ -11,21 +11,20 @@ $(document).ready(function() {
    // event.preventDefault();
 
     if(!$('#new-item').val()) {
-      /*.alert('Please type a new item in the space provided.');*/
-      console.log();
+      alert('Please type a new item in the space provided.');
     } else {
-        $('<li class="list-items"></li>').appendTo('#list')/*.html('<div class="item-case"></div><span>'input-value'</span>')*/;
+        $('<li class="list-items">' + inputValue + '</li>').appendTo('#list');
 
     document.getElementById('new-item').value = '';
     };
   });
 
 /* Use "enter" key for new item */
-  $('.new-item').keydown(function(event) {
+  $('#new-item').on('keydown',(function(event) {
     if(event.keyCode === 13) {
       event.preventDefault();
       $('.add').click();
     };
-  });
+  }));
 
 });

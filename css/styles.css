@@ -18,19 +18,23 @@ p, input, input:placeholder-shown, ul {
 input, ul {
   width: 55%;
   margin-left: 20%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding-left: 2em;
   color: royalblue;
 }
 
 button {
   width: 25px;
-  color: royalblue;
+  color: white;
+  background-color: royalblue;
   font-weight: bolder;
+  border-radius: 7px;
+  border-color: royalblue;
+  text-shadow: none;
 }
 
-input:placeholder-shown {
-
+input {
+  border-radius: 7px;
 }
 
 ul {
