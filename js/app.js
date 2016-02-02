@@ -5,10 +5,10 @@ $(document).ready(function() {
 
 
 /* Add new item */
-  $('#add').click(function){
-    var input-area = document.getElementById('new-item')
-    var input-value = input-area.value;
-    event.preventDefault();
+  $('#add').click(function(e) {
+    var inputArea = document.getElementById('new-item')
+    var inputValue = inputArea.value;
+   // event.preventDefault();
 
     if(!$('#new-item').val()) {
       /*.alert('Please type a new item in the space provided.');*/
@@ -21,7 +21,7 @@ $(document).ready(function() {
   });
 
 /* Use "enter" key for new item */
-  $(.'new-item').keydown(funtion(event){
+  $('.new-item').keydown(function(event) {
     if(event.keyCode === 13) {
       event.preventDefault();
       $('.add').click();
