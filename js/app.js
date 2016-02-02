@@ -33,11 +33,15 @@ $('.delete').mousedown(function(event) {
   $(this).parent('li').remove();
 });
 
-/* Check item */
+/* Check/Uncheck item */
 $('.check').mousedown(function(event) {
-  $(this).parent('li').css("text-decoration", "line-through");
-});
+  var checked = $(this).parent('li').css('text-decoration');
+  if (checked == 'line-through')
+    $(this).parent('li').css("text-decoration", "none");
+  else
+    $(this).parent('li').css("text-decoration", "line-through");
 
+});
 
 
 });
