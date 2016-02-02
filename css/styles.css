@@ -19,7 +19,7 @@ input, ul {
   width: 55%;
   margin-left: 20%;
   margin-bottom: 10px;
-  padding-left: 2em;
+  padding-left: 10%;
   color: royalblue;
 }
 
@@ -35,6 +35,8 @@ button {
 
 button:hover, span:hover {
   cursor: pointer;
+  text-shadow: 2px 2px 2px #000;
+
 }
 
 input {
