@@ -14,7 +14,7 @@ $(document).ready(function() {
     if(!$('#new-item').val()) {
       alert('Please type a new item in the space provided.');
     } else {
-        $('<li class="list-items">' + '<span class="delete">&#10007 </span>' + '<span class="check">&#10003 </span>' + inputValue + '</li>').append('#list');
+        $('<li class="list-items">' + '<span class="delete">&#10007</span>  <span class="check">&#10003</span>' + ' ' + inputValue + '</li>').appendTo('#list');
 
     document.getElementById('new-item').value = '';
   };
@@ -28,21 +28,20 @@ $(document).ready(function() {
     };
   }));
 
-
-
-
-});
-
 /* Delete item */
-$(document).on('click', ".delete", function()  {
+$('.delete').mousedown(function(event) {
   $(this).parent('li').remove();
 });
 
 /* Check/Uncheck item */
-$(document).on('click', ".check", function()  {
+$('.check').mousedown(function(event) {
   var checked = $(this).parent('li').css('text-decoration');
   if (checked == 'line-through')
     $(this).parent('li').css("text-decoration", "none");
   else
     $(this).parent('li').css("text-decoration", "line-through");
+
+});
+
+
 });
