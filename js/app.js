@@ -29,12 +29,12 @@ $(document).ready(function() {
   }));
 
 /* Delete item */
-$('.delete').mousedown(function(event) {
+$(document).on('click', ".delete", function() {
   $(this).parent('li').remove();
 });
 
 /* Check/Uncheck item */
-$('.check').mousedown(function(event) {
+$(document).on('click', ".check", function() {
   var checked = $(this).parent('li').css('text-decoration');
   if (checked == 'line-through')
     $(this).parent('li').css("text-decoration", "none");
